@@ -13,7 +13,7 @@ defmodule RumblWeb.Application do
       # Start the Endpoint (http/https)
       RumblWeb.Endpoint,
       # Start a worker by calling: RumblWeb.Worker.start_link(arg)
-      # {RumblWeb.Worker, arg}
+      {Phoenix.PubSub, name: RumblWeb.PubSub},
       RumblWeb.Presence
     ]
 
